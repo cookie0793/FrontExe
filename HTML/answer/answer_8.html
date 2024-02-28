@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원 가입</title>
     <style>
+        	ul { list-style:none;}
+		li { line-height:50px; }
+		label {
+			width:150px;
+			float:left;
+		}
         #container {
             width: 600px;
             margin: 10px auto;
@@ -55,7 +61,7 @@
             <fieldset>
                 <legend>이벤트와 새로운 소식</legend>
                 <label><input type="radio" name="mail" value="yes">메일 수신</label>
-                <label><input type="radio" name="mail" value="no">메일 수신 안함</label>
+                <label><input type="radio" name="mail" value="no" checked>메일 수신 안함</label>
             </fieldset>
             <div id="buttons">
                 <input type="submit" value="가입하기">
