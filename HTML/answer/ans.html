@@ -1,70 +1,65 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원 가입</title>
+    <title>question10</title>
     <style>
-        #container {
-            width: 600px;
-            margin: 10px auto;
-        }
+			#container { 
+				width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      fieldset { margin-bottom:15px; }
+      legend { font-weight:bold; }
+			ul {list-style-type: none;}
+			li { line-height:30px;}
     </style>
-    <link rel="stylesheet" href="css/register.css">
-</head>
-
-<body>
-    <div id="container">
-        <h1>회원 가입을 환영합니다</h1>
-        <form>
-            <fieldset>
-                <legend>사용자 정보</legend>
-                <ul>
-                    <li>
-                        <label for="uid">아이디</label>
-                        <input type="text" id="uid" autofocus placeholder="4자 ~ 10자 사이, 공백없이" required>
-                    </li>
-                    <li>
-                        <label for="umail">이메일</label>
-                        <input type="email" id="umail" required>
-                    </li>
-                    <li>
-                        <label for="pwd1">비밀번호</label>
-                        <input type="password" id="pwd1" placeholder="문자와 숫자, 특수 기호 포함" required>
-                    </li>
-                    <li>
-                        <label for="pw2">비밀번호 확인</label>
-                        <input type="password" id="pwd2" required>
-                    </li>
-                    <li>
-                        <label for="path">가입 경로</label>
-                        <select id="path">
-                            <option value="blog">블로그</option>
-                            <option value="search">검색</option>
-                            <option value="sns">SNS</option>
-                            <option value="etc">기타</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="memo">메모</label>
-                        <textarea cols="40" rows="4" placeholder="남길 말씀이 있다면 여기에"></textarea>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>이벤트와 새로운 소식</legend>
-                <input type="radio" name="mailing" id="mailing_y" value="mailing_yes">
-                <label for="mailing_y">메일 수신</label>
-                <input type="radio" name="mailing" id="mailing_n" value="mailing_no" checked>
-                <label for="mailing_n">메일 수신 안 함</label>
-            </fieldset>
-            <div id="buttons">
-                <input type="submit" value="가입하기">
-                <input type="reset" value="취소">
-            </div>
-        </form>
-    </div>
-</body>
-
+  </head>
+  <body>
+		<div id="container">
+			<h1>프런트엔드 개발자 지원서 </h1>
+			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+			<hr>
+			<form>
+				<h4>개인정보</h4>
+				<ul>
+					 <li>
+						 <!-- <input>태그 앞 뒤에 <label>과 </label> 태그로 묶어도 됩니다 -->
+							<label for="sname"> 이름 </label>
+							<input type="text" id="sname" autofocus placeholder="공백없이 입력하세요">
+					</li>
+					<li>
+							<label for="snumber"> 연락처 </label>
+							<input type="text" id="snum">
+					 </li>
+				</ul>
+				<h4>지원 분야</h4>
+				<ul>
+					<li>
+						<label><input type="radio" name="field" value="an"> 웹 퍼블리싱</label>
+					</li>
+					<li>
+						<label><input type="radio" name="field" value="pd"> 웹 애플리케이션 개발</label>
+					</li>
+					<li>
+						<label><input type="radio" name="field" value="eng"> 개발 환경 개선</label>
+					</li>
+				</ul>
+        <label>
+          <h4>지원동기</h4>
+          <textarea id="motive" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+        </label>
+				<div>
+					<input type="submit" value="접수하기">
+					<input type="reset" value="다시 쓰기">
+					<!-- 다음과 같이 작성해도 됩니다.
+						<button type="submit">접수하기</boutton>
+						<button type="reset">다시 쓰기</button>
+					-->
+				</div>
+			</form>
+		</div>
+  </body>
 </html>
