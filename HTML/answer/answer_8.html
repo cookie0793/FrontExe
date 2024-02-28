@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <style>
+        #container {
+            width: 600px;
+            margin: 10px auto;
+        }
+    </style>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>회원 가입을 환영합니다.</h1>
+        <form>
+            <fieldset>
+                <legend>사용자 정보</legend>
+                <ul>
+                    <li>
+                        <label for="id"><b>아이디</b></label>
+                        <input name="uid" type="text" id="id" placeholder="4자 ~ 10자 사이, 공백없이">
+                    </li>
+                    <li>
+                        <label for="mail"><b>이메일</b></label>
+                        <input name="umail" type="email" id="mail">
+                    </li>
+                    <li>
+                        <label for="pwd1"><b>비밀번호</b></label>
+                        <input name="upwd1" type="password" id="upwd1">
+                    </li>
+                    <li>
+                        <label for="pwd2"><b>비밀번호 확인</b></label>
+                        <input name="upwd2" type="password" id="upwd2">
+                    </li>
+                    <li>
+                        <label for="prod1"><b>가입 경로</b></label>
+                        <select id="prod1">
+                            <option value="vlog" selected>블로그</option>
+                            <option value="search">검색</option>
+                            <option value="SNS">SNS</option>
+                            <option value="gita">기타</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="memo"><b>메모</b></label>
+                        <textarea name="umemo" id="memo" cols="40" rows="4" placeholder="남길 말씀이 있다면 여기에"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>이벤트와 새로운 소식</legend>
+                <label><input type="radio" name="mail" value="yes">메일 수신</label>
+                <label><input type="radio" name="mail" value="no">메일 수신 안함</label>
+            </fieldset>
+            <div id="buttons">
+                <input type="submit" value="가입하기">
+                <input type="reset" value="취소">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
