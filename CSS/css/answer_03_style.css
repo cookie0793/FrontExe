@@ -1,0 +1,26 @@
+table,
+th,
+td {
+    border: 1px solid #222;
+    /* 표 테두리 */
+    border-collapse: collapse;
+    /* 테두리 1줄만 표시 */
+}
+
+th,
+td {
+    padding: 10px;
+    /* 셀 안쪽의 여백(패딩) */
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+ol {
+    color: green;
+}
