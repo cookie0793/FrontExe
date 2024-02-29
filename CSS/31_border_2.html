@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        #bos1{
-            border-width: 2px; /* 4방향 모두 2px */
+        div{
+            width:200px;
+            height:100px;
+            display:inline-block;
+            margin:15px;
+            text-align:center;
+            font-size:20px;
+            line-height: 100px;
+            border-width:5px;
+            border-style:solid;
         }
-        #bos2{
-            border-width: thick thin; /* top,bottom - thick, left,right - thin */
+        #box1{
+            border-width:2px;   /* 4방향 모두 2px*/
+         }
+        #box2{ 
+            border-width:thick thin; /* top,bottom - thick, left,right - thin*/
         }
-        #bos3{
-            border-width: thick thin thin;
+        #box3{ 
+            border-width: thick thin thin; /* top-thick, right-thin, bottom-thin, left-thin*/
         }
-        #bos3{
+        #box3{ 
             border-width: 10px 5px 5px 10px; /*상 우 하 좌*/
         }
     </style>
