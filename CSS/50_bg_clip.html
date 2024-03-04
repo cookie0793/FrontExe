@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .desc{
+            border: 5px dotted #222;
+            background-color: #ffd9a0;
+            width:350px;
+            padding:20px;
+            margin-right: 20px;
+            float: left;
+        }
+        #clip-border{
+            background-clip: border-box;
+        }
+        #clip-padding{
+            background-clip: padding-box;
+        }
+        #clip-content{
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- id는 유니크한것. 하나만 지정해야함. class는 여러가지 -->
+    <div id="container">
+        <div class="desc" id="clip-border">
+            <h1>블루베리</h1>
+            <p>북아메리카를 비롯한 북반구 전역에 분포하는 식물 및 열매.</p>
+            <p>안토시아닌 등 <em>항산화 물질의 포함되어</em> 노화방지, 치매 예방이나 면역력 증가 등의 효과가 있다고 믿어지고 있다.</p>
+        </div>
+        <div class="desc" id="clip-padding">
+            <h1>블루베리</h1>
+            <p>북아메리카를 비롯한 북반구 전역에 분포하는 식물 및 열매.</p>
+            <p>안토시아닌 등 <em>항산화 물질의 포함되어</em> 노화방지, 치매 예방이나 면역력 증가 등의 효과가 있다고 믿어지고 있다.</p>
+        </div>
+        <div class="desc" id="clip-content">
+            <h1>블루베리</h1>
+            <p>북아메리카를 비롯한 북반구 전역에 분포하는 식물 및 열매.</p>
+            <p>안토시아닌 등 <em>항산화 물질의 포함되어</em> 노화방지, 치매 예방이나 면역력 증가 등의 효과가 있다고 믿어지고 있다.</p>
+        </div>
+    </div>
+</body>
+</html>
