@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS3 애니메이션</title>
+  <style>
+    li{
+      position: relative; /* li 요소의 위치를 상대적으로 설정 */
+      float: left;
+      margin: 10px;
+      list-style-type: none;
+    }
+
+    .overlay {
+      position: absolute; /* 이미지와 텍스트를 포함하는 컨테이너의 위치를 절대적으로 설정 */
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* 반투명한 배경 설정 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0; /* 처음에는 숨김 */
+      transition: opacity 0.5s ease, height 0.5s ease; /* 투명도와 높이 변경 시 부드럽게 전환 */
+      transform: translateY(100%); /* 아래에서 위로 이동하는 효과 */
+    }
+
+    li:hover .overlay {
+      opacity: 1; /* 호버 시 전체 화면 텍스트를 보이게 함 */
+      height: 100%; /* 텍스트 영역을 확장하여 텍스트가 보이도록 함 */
+      transform: translateY(0); /* 호버 시 위로 이동하는 효과 */
+    }
+
+    .text-container {
+      color: white; /* 텍스트의 색상을 흰색으로 설정 */
+      text-align: center;
+    }
+
+    .caption h2, .caption p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+	<div id="container">
+    <h1>신상품 목록</h1>
+		<ul class="prod-list">
+      <li>
+        <img src="../../images/prod1.jpg">
+        <div class="overlay">
+          <div class="text-container">
+            <h2>상품 1</h2>
+            <p>상품 1 설명 텍스트</p>
+            <p>가격 : 12,345원</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="../../images/prod2.jpg">
+        <div class="overlay">
+          <div class="text-container">
+            <h2>상품 2</h2>
+            <p>상품 2 설명 텍스트</p>
+            <p>가격 : 12,345원</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="../../images/prod3.jpg">
+        <div class="overlay">
+          <div class="text-container">
+            <h2>상품 3</h2>
+            <p>상품 3 설명 텍스트</p>
+            <p>가격 : 12,345원</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+	</div>
+</body>
+</html>
