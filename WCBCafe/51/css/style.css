@@ -236,6 +236,48 @@ aside p{
     color:#0bd;
 }
 
+/* MENU
+-------------------------------------------*/
+#menu{
+    background-image: url('../../../../siteimages/menu-bg.jpg');
+    min-height: 100vh;
+}
+.menu-content{
+    max-width: 560px;
+    margin-top:10%;
+}
+.menu-content .page-title{
+    text-align: center;
+}
+.menu-content p{
+    font-size:1.125rem;
+    margin: 10px 0 0;
+}
+
+
+/* MENU grid 
+--------------------------------------*/
+.grid{
+    display: grid;
+    gap:26px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom:50px;
+}
+
+.big-box{
+    grid-column: 1/3;
+    grid-row:1/3;
+}
+
+.big-bog img{
+    height:94%;
+    width:100%;
+    object-fit: cover; /* 가로, 세로 비율에 따라 이미지가 변하지 않고 배율을 유지하고 싶을 때 */
+}
+
 /* 0~600px 사이의 화면일 때 적용 */
 @media(max-width:600px){
 
@@ -307,5 +349,11 @@ aside p{
   .post-cat{
     margin-left: 80px;
   }
+
+  /* MENU */
+  .menu-content{
+    margin-top:20%;
+  }
+
 
 }
